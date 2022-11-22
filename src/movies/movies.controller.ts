@@ -35,7 +35,7 @@ export class MoviesController {
 
   @Post()
   create(@Body() movideData: CreateMovieDto) {
-    return this.moviesService.cresaet(movideData);
+    return this.moviesService.create(movideData);
   }
 
   @Delete(':id')
